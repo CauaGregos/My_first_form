@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+
+    <div class="campo">
+        <h1 id="titulo">Cadastro iConhecimento</h1>
+        <p id="subtitulo">Preecha seus dados</p>
+        <br>
+    </div>
+
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome<strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email">Seu email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label>Selecione a baixo, o período em que você estuda</label>
+            <label>
+                <input type="radio" name="periodo" value="manhã">Vespertino
+            </label>
+            <label>
+                <input type="radio" name="periodo" value="noite">Noturno
+            </label>
+        </div>
+        <div class="campo">
+            <Label>Qual seu curso?</Label>
+            <select id="curso"> 
+                <option selected disabled value="">Selecione....</option>            
+                <option>59</option>
+                <option>39</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="conf">
+                <label>Quais seus conhecimentos?</label>
+                <input type="checkbox" id="conhecimentos" name="conhecimentos" value="HTML">
+                <label for="conhecimentos">HTML</label>
+                <input type="checkbox" id="conhecimentos" name="conhecimentos" value="CSS">
+                <label for="conhecimentos">CSS</label>
+                <input type="checkbox" id="conhecimentos" name="conhecimentos" value="JS">
+                <label for="conhecimentos">Java Script</label>
+                <input type="checkbox" id="conhecimentos" name="conhecimentos" value="C#">
+                <label for="checkbox">C#</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            Diga um pouco sobre o curso, está gostando?
+            <textarea rows="5" style="width: 26em;" id="opniao" name="opniao"></textarea>
+        </div>
+
+        <button class="botao">Accept</button>
+
+
+    </form>
+    
+</body>
+</html>
